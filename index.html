@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecos da Mente</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="menu">
+<h1>Ecos da Mente</h1>
+<button onclick="startGame()">Iniciar Jornada</button>
+<button onclick="continueGame()">Continuar</button>
+<button onclick="resetGame()">Reiniciar</button>
+</div>
+
+<div class="container">
+
+<h1>Ecos da Mente</h1>
+
+<div id="scene"></div>
+
+<div id="choices"></div>
+
+<div class="stats">
+<div>Consciência: <span id="cons"></span></div>
+<div>Ego: <span id="ego"></span></div>
+<div>Medo: <span id="medo"></span></div>
+<div>Clareza: <span id="clareza"></span></div>
+</div>
+
+</div>
+
+<audio id="ambiente" loop autoplay>
+<source src="ambient.wav" type="audio/wav">
+</audio>
+
+<script src="save.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
